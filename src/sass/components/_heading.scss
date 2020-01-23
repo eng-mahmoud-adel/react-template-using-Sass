@@ -1,0 +1,25 @@
+.head-with-border {
+    text-align: center;
+    .header-component{
+        position: relative;
+        .component-header {
+            color: white;
+            background-color: $mainColor;
+            width: 200px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 5px 0;
+            &::before {
+                content: "";
+                height: 1px;
+                width: 88%;
+                margin: 0 6%;
+                background-color: $secondaryColor;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }
+}

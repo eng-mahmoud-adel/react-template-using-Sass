@@ -1,0 +1,24 @@
+.container {
+    margin: auto;
+    padding: 0 15px;
+    // for extra small screens
+    @media #{$maxExtraSmall} {
+        width: 100%;
+    }
+    // for small screens
+    @media #{$minSmall} {
+        width: 540px;
+    }
+    // for medium screens
+    @media #{$minMedium} {
+        width: 720px;
+    }
+    // for large screens
+    @media #{$minLarge} {
+        width: 960px;
+    }
+    // for extra large screens
+    @media #{$minExtraLarge} {
+        width: 1140px;
+    }
+}

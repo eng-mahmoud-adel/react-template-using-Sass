@@ -1,0 +1,96 @@
+/* start header */
+.header {
+    padding: 25px 0;
+    overflow: hidden;
+    border-bottom: 1px solid $secondaryColor;
+    position: relative;
+    .logo {
+        color: #525252;
+        @media #{$minSmall} {
+            width: 100%;
+        }
+        @media #{$minMedium} {
+            width: 30%;
+            float: $float-left;
+        }
+        h2 {
+            font-size: 35px;
+            margin: 0;
+        }
+    }
+    .navbar {
+        @media #{$maxExtraSmall} {
+            display: none;
+        }
+        @media #{$minSmall} {
+            display: none;
+        }
+        @media #{$minMedium} {
+            display: block !important;
+            float: left;
+            width: 59%;
+            margin-left: 11%;
+        }
+        ul {
+            list-style: none;
+            background-color: $mainColor;
+            border-radius: 20px;
+            padding: 0;
+            li {
+                color: white;
+                cursor: pointer;
+                @media #{$maxExtraSmall} {
+                    padding: 10px 0 10px 20px;
+                }
+                @media #{$minSmall} {
+                    padding: 10px 0 10px 20px;
+                }
+                @media #{$minMedium} {
+                    display: inline-block;
+                    padding: 20px 3px;
+                    text-align: center;
+                }
+                @media #{$minLarge} {
+                    padding: 20px 17px;
+                }
+                @media #{$minExtraLarge} {
+                    padding: 20px 28px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .toggler {
+        width: 50px;
+        height: 30px;
+        background-color: $mainColor;
+        padding: 5px;
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        border-radius: 3px;
+        cursor: pointer;
+        @media #{$maxExtraSmall} {
+            display: block;
+        }
+        @media #{$minSmall} {
+            display: block;
+        }
+        @media #{$minMedium} {
+            display: none;
+        }
+        span {
+            background-color: white;
+            width: 40px;
+            height: 3px;
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            
+        }
+    }
+}
+/* end header */

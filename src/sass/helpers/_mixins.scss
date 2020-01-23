@@ -1,0 +1,28 @@
+@mixin minMedium {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+/*
+ ** Overlay Mixin
+ ** Overlay main properties
+*/
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+ ** Prefixes Mixin
+ ** Auto add prefixes to properties
+*/
+@mixin prefixer($prop, $val, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{"-" + $prefix + "-" + $prop}: $val;
+    }
+    #{$prop}: $val;
+}
